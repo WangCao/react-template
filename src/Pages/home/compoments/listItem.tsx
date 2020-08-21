@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ListItem: React.FC = (props) => {
+const ListItem: React.FC = () => {
   return (
     <div>
       <Link to='/'>home</Link>

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
+import React from 'react';
+// import axios from 'axios';
 import styled from 'styled-components';
 import BottomBar from './compoments/bottomBar';
 
@@ -19,18 +18,18 @@ interface TopicList {
 }
 
 const Home: React.FC = () => {
-  const [list, setList] = useState<TopicList[]>([]);
-  useEffect(() => {
-    axios
-      .get('https://cnodejs.org/api/v1/topics')
-      .then((res) => {
-        console.log(res.data.data);
-        return setList(res.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+  // const [list, setList] = useState<TopicList[]>([]);
+  // useEffect(() => {
+  //   axios
+  //     .get('https://cnodejs.org/api/v1/topics')
+  //     .then((res) => {
+  //       console.log(res.data.data);
+  //       return setList(res.data.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
   return (
     <Box>
       <BottomBar />
