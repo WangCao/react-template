@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import App from 'Src/app';
-import './index.less';
+import 'Src/Styles/_Reset.less';
 
 if (module && module.hot) {
   module.hot.accept();
