@@ -17,5 +17,5 @@ const Box = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
-  height: 1.6px;
+  height: 1.5px;
 `;
